@@ -1,12 +1,12 @@
 # Data-Lake-with-Apache-Spark-and-AWS
 Data Lake project on extracting and loading data in Amazon S3 and processing and transforming data using Apache Spark
 
-##Project Description
+## Project Description
 A music streaming startup, Sparkify, has grown their user base and song database even more and want to move their data warehouse to a data lake. Their data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
 In this project, we will build an ETL pipeline for a data lake hosted on S3. We will load data from S3, process the data into analytics tables using Spark, and load them back into S3. We will deploy this Spark process on a cluster using AWS.
 
-##Deployement
+## Deployement
 File ```dl.cfg``` contains :
 
 ```
@@ -18,7 +18,7 @@ If you are using local as your development environemnt - then move project direc
 scp -i <.pem-file> <Local-Path> <username>@<EMR-MasterNode-Endpoint>:~<EMR-path>
 ```
 
-###OR 
+### OR 
 
 You can also create the files directly in emr cluster using vi editor or any editor of your choice.
 
@@ -26,7 +26,7 @@ You can also create the files directly in emr cluster using vi editor or any edi
 vi etl.py
 ```
 
-##How to Run
+## How to Run
 
 Create an S3 Bucket named ```sparkify-datalake-***``` where output results will be stored.
 
@@ -39,7 +39,7 @@ Confirm the spark-submit location on your emr using below command:
 which spark-submit
 ```
 
-##ETL pipeline
+## ETL pipeline
 1. Load credentials
 
 2. Read data from S3
