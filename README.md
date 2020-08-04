@@ -57,5 +57,5 @@ The script reads song_data and load_data from S3.
 
 Each of the five tables are written to parquet files in a separate analytics directory on S3. Each table has its own folder within the directory. Songs table files are partitioned by year and then artist. Time table files are partitioned by year and month. Songplays table files are partitioned by year and month.
 
-**Note:** ```Data_lake_spark.ipnyb``` notebook is not a part of project. It was created to run all the commands seprately and understand individual output. It access the data from local, processes it and create the output in seperate directory in local.
+**Note:** ```Data_lake_spark.ipnyb``` This notebook is not a part of project. It was created to test the code locally without spinning spark cluster on AWS. It can be used to run all the commands seprately and understand individual output. It access the data from local, processes it and create the output in seperate directory in local. You can download data from data.zip in local to get started with this notebook
 
